@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+<html lang="fr"> 
+<head> 
+   <title>Virtual Classroom</title> 
+
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+   <link rel="stylesheet" href="styles/style.css">
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+<body id="body">
+  <section>
+  <ul>
+    <li class="dropdownmenu">
+      <a href="javascript:void(0)" class="menu">Menu</a>
+      <div class="dropdownmenu-content">
+        <a href="#Participant">Liste des étudiants</a>
+        <a href="#">Mon Profil</a>
+        <br>
+        <a href="">Quiter</a>
+      </div>
+    </li>
+    <li><a href="#">Discussion</a></li>
+    <li><a href="#">Travaux et devoirs</a></li>
+    <li><a href="#Participant">Participant</a></li>
+  </ul>
+</section>
+
+<section id="app-root">
+
+  <!-- Contenu injecté ici -->
+</section>
+
+
+
+
+<!-- Scripts à la fin pour laisser le DOM se charger -->
+<script src="scripts/component-loader.js"></script>
+<script src="scripts/application-router.js"></script>
+
+<script src="view-models/participant-view-model.js"></script>
+<script src="view-models/addParticipant-view-model.js"></script>
+<!-- Bootstrap l'application -->
+<script src="scripts/main.js"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+<!-- service -->
+
+<script src="services/participant-service.js"></script>
+
+
+</body> 
+</html>
